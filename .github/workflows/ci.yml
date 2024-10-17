@@ -38,6 +38,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
     - name: Run one-line script
       run: echo Hello
